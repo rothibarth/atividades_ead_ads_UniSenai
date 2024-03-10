@@ -1,0 +1,17 @@
+html{
+    background-color: black;
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5;
+}
