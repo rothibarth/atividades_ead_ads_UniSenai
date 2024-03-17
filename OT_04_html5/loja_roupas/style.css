@@ -1,0 +1,73 @@
+#cabecalho{
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 30;
+}
+
+
+.topnav {
+    background-color: #333;
+    padding: 10px;
+}
+
+.topnav div {
+    display: inline;
+}
+
+.topnav div a {
+    color: white;
+    text-decoration: none;
+}
+
+.topnav .nav a {
+    padding: 10px;
+
+}
+
+.topnav .carrinho {
+    float: right;
+    display: inline;
+    display: flex;
+}
+
+.topnav .carrinho img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.cards {
+    display: inline-flex;
+    float: inline-start;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.sellcard {
+    float: left;
+    width: 23.40%;
+    margin: 10px;
+    color: #000;
+}
+
+.sellcard img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.sellcard p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sellcard .valor {
+    font-weight: bold;
+}
+
+.sellcard .compra {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
