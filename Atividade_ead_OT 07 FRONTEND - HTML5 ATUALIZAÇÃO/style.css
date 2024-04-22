@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.login-container {
+    background-image: url(tela_atvd_ead_07.png); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Camada escura para melhor contraste */
+}
+
+.login-form {
+    position: relative;
+    padding: 50px;
+    background: rgba(209, 70, 70, 0.514);
+    border-radius: 50px;
+    box-shadow: 0 18px 28px rgba(86, 174, 233, 0.2);
+    z-index: 2; /* Garante que o formulário fique acima do pseudo-elemento ::before */
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0 8px 14px rgba(0,0,0,0.5);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding não aumente o tamanho do input */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e7565d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-form button:hover {
+    background-color: #f85cc9;
+}
