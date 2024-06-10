@@ -1,17 +1,115 @@
-html{
-    background-color: white;
-
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    color: black;
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-section {
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Styling */
+.header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-p {
-    line-height: 1.5;
+.header .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header nav .nav {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav .nav-item {
+    display: inline;
+    margin-right: 10px;
+}
+
+.header nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header nav .nav-link:hover {
+    background: #0056b3;
+}
+
+/* Main Section Styling */
+main {
+    margin: 20px 0;
+}
+
+main section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+main section p {
+    font-size: 1.2rem;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-group .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-group .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
