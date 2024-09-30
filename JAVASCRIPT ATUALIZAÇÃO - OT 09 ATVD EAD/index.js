@@ -31,3 +31,70 @@ class Animal {
 }
 
 
+class Veiculo {
+    constructor(marca, modelo, velocidadeMaxima) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.velocidadeMaxima = velocidadeMaxima;
+    }
+
+    descrever() {
+        console.log(`Veículo: ${this.marca} ${this.modelo}, Velocidade Máxima: ${this.velocidadeMaxima} km/h`);
+    }
+}
+
+
+class Estudante {
+    constructor(nome) {
+        this.nome = nome;
+        this.notas = [];
+    }
+
+    adicionarNota(nota) {
+        this.notas.push(nota);
+    }
+
+    calcularMedia() {
+        if (this.notas.length === 0) return 0;
+        const soma = this.notas.reduce((acc, nota) => acc + nota, 0);
+        return soma / this.notas.length;
+    }
+}
+
+
+class Utilitario {
+    static celsiusParaFahrenheit(celsius) {
+        return (celsius * 9/5) + 32;
+    }
+}
+
+
+class Jogo {
+    static adivinhar(numero) {
+        const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+        if (numero === numeroAleatorio) {
+            return "Você acertou!";
+        } else {
+            return `Você errou! O número era ${numeroAleatorio}.`;
+        }
+    }
+}
+
+
+class ContaBancaria {
+    constructor(titular, saldoInicial = 0) {
+        this.titular = titular;
+        this.saldo = saldoInicial;
+    }
+
+    sacar(valor) {
+        if (valor > this.saldo) {
+            console.log("Saldo insuficiente!");
+        } else {
+            this.saldo -= valor;
+            console.log(`Saque de ${valor} realizado. Saldo atual: ${this.saldo}`);
+        }
+    }
+}
+
+
