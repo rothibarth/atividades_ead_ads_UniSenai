@@ -1,0 +1,37 @@
+1. O que é TypeScript e quais são suas principais vantagens em relação ao
+JavaScript? Cite pelo menos duas vantagens.
+
+A principal vantagem do TypeScript em relação ao JavaScript “tradicional” é adicionar 
+recursos importantes e úteis para a construção de projetos em larga escala, como tipagem estática, 
+forte e automática, orientação a objetos e a possibilidade de descobrir e corrigir erros em tempo real 
+durante o desenvolvimento.
+
+2. Analise o seguinte código em TypeScript e explique qual é a diferença
+em relação ao equivalente em JavaScript:
+
+No exemplo TypeScript, definimos tipos para os parâmetros e para o retorno
+da função. Isso ajuda a evitar erros como a concatenação acidental de
+números e strings, um problema comum em JavaScript.
+
+3.Quais os passos necessários para instalar o TypeScript e configurar um
+novo projeto? Liste pelo menos três etapas.
+
+- instalar node
+- instalar npm
+- instalar o TypeScript
+
+4.O que é o arquivo tsconfig.json e qual a sua importância na
+configuração do TypeScript? Cite pelo menos duas configurações que
+podem ser definidas nesse arquivo.
+
+Invocando o tsc sem os arquivos de entrada, nesse caso o compilador procura o arquivo tsconfig.json começando 
+no diretório atual e continua em suas sub pastas.
+Invocando o tsc sem os arquivos de entrada e a opção de linha de comando --project (ou apenas -p) que especifica 
+o caminho para o diretório que contém o arquivo
+ tsconfig.json, ou o caminho para um arquivo .json válido contendo as configurações.
+
+5. Depois de criar um arquivo TypeScript (index.ts), quais comandos
+você deve executar para compilar e rodar o código? Descreva
+brevemente o que acontece em cada etapa.
+
+npm install -g TypeScript - isso caso o node e npm estejam instalados
